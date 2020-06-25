@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>!DOCTYPE</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Мемобмен</h1>
+        <h2>Привет, друг!</h2>
+        <p>
+          Эта страница была создана для того, чтобы ты мог совершить обмен
+          мемами.
+        </p>
+        <p>Несколько простых шагов и ты получишь свой мем:</p>
+        <ul>
+          <li>загрузить свой мем на страницу;</li>
+          <li>сделать вжух;</li>
+          <li>получить мем в ответ;</li>
+        </ul>
+        <input
+          type="file"
+          onChange="answerMeme()"
+          multiple
+          accept="img/jpg/jpeg/png"
+        />
+        <div>
+          <img class="displayed" src="1.jpg" width="40%" />
+          <img class="displayed" src="2.jpg" width="50%" />
+          <img class="displayed" src="3.jpg" width="50%" />
+          <img class="displayed" src="4.jpg" width="50%" />
+          <img class="displayed" src="5.jpg" width="50%" />
+        </div>
+      </div>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>
