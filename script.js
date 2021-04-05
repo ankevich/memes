@@ -1,11 +1,31 @@
-function answerMeme() {
-  console.log("1");
-  const imgs = document.getElementsByTagName("img");
-  for (let img of imgs) {
-    img.style.display = "none";
-  }
-  let visibleIdx = Math.floor(0 + Math.random() * imgs.length);
-  for (let i = 0; i < imgs.length; i++) {
-    if (i == visibleIdx) imgs[i].style.display = "inline-block";
-  }
+// - скрыть фиолетовое окно +
+// - выбрать рандомную картинку
+// - показать картинку
+
+const answerMeme = () => {
+  
+  document.getElementById('window').hidden = true
+  document.getElementById('answer').hidden = false
+
+  const memes = document.getElementsByTagName('img')
+  const memesArray = Array.prototype.slice.call(memes)
+
+  const maxMemes = memes.length
+  const showIndex = Math.ceil(Math.random() * maxMemes) - 1
+
+  memesArray.map((meme, index) => {
+    if (index == showIndex) {
+      meme.hidden = false
+    } else {
+      meme.hidden = true
+    }
+  })
+
+  document.getElementById('button').value = ""
+}
+
+
+const hideAnswer = () => {
+  document.getElementById('window').hidden = false
+  document.getElementById('answer').hidden = true
 }
