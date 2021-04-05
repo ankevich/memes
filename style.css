@@ -82,6 +82,7 @@ label {
 
 .frame > * {
   border-radius: 35.0429px;
+  
   position: absolute;
   left: 50%;
   top: 50%;
