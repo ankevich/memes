@@ -34,10 +34,14 @@
       />
       <label for="button">Загрузить&nbsp;мем</label>
     </div>
-    <div class="answer" id="answer" >
-      <button onClick="hideAnswer()">
+
+    <div class="answer" id="answer" hidden>
+      <div class="close" onClick="hideAnswer()">
+        <div class="x-mark"></div>
+      </div>
+
       <div class="frame">
-        <img  src="1.jpg" />
+        <img hidden src="1.jpg" />
         <img hidden src="2.jpg" />
         <img hidden src="3.jpg" />
         <img hidden src="4.jpg" />

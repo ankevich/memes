@@ -93,3 +93,26 @@ label {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.close {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 16px 20px 0px;
+
+  position: fixed;
+  
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 1000;
+}
+.close .x-mark {
+  width: 60px;
+  height: 60px;
+
+  background-image: url('images/x-mark.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}

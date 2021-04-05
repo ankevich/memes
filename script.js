@@ -3,6 +3,7 @@
 // - показать картинку
 
 const answerMeme = () => {
+  
   document.getElementById('window').hidden = true
   document.getElementById('answer').hidden = false
 
@@ -19,6 +20,8 @@ const answerMeme = () => {
       meme.hidden = true
     }
   })
+
+  document.getElementById('button').value = ""
 }
 
 
