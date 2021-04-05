@@ -20,3 +20,9 @@ const answerMeme = () => {
     }
   })
 }
+
+
+const hideAnswer = () => {
+  document.getElementById('window').hidden = false
+  document.getElementById('answer').hidden = true
+}
