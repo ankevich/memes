@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>!DOCTYPE</title>
+    <title>Meme exchange</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <header>
-      <div>
-        <h1>Мемобмен</h1>
-        <h2>Привет, друг!</h2>
-        <p>
-          Эта страница была создана для того, чтобы ты мог совершить обмен
-          мемами.
-        </p>
-        <p>Несколько простых шагов и ты получишь свой мем:</p>
-        <ul>
-          <li>загрузить свой мем на страницу;</li>
-          <li>сделать вжух;</li>
-          <li>получить мем в ответ;</li>
-        </ul>
-        <input
-          type="file"
-          onChange="answerMeme()"
-          multiple
-          accept="img/jpg/jpeg/png"
-        />
-        <div>
-          <img class="displayed" src="1.jpg" width="40%" />
-          <img class="displayed" src="2.jpg" width="50%" />
-          <img class="displayed" src="3.jpg" width="50%" />
-          <img class="displayed" src="4.jpg" width="50%" />
-          <img class="displayed" src="5.jpg" width="50%" />
+    <div class="window">
+      <div class="text-block">
+        <div class="text">
+          <h1>Привет, друг!</h1>
+          <p>
+            Эта страница была создана для того, чтобы ты мог совершить обмен
+            мемами.
+          </p>
+          <p>
+            Как это работает? Загрузи на страницу свой лучший мем и получи один
+            из лучших мемов моей коллекции.
+          </p>
         </div>
+        <input type="file" id="button" hidden />
+        <label for="button">Загрузить мем</label>
       </div>
-    </header>
-    <script src="script.js"></script>
+    </div>
   </body>
+
+  <!-- <body>
+      <h1>Мемобмен</h1>
+      <h2>Привет, друг!</h2>
+      <p>
+        Эта страница была создана для того, чтобы ты мог совершить обмен мемами.
+      </p>
+      <p>Несколько простых шагов и ты получишь свой мем:</p>
+      <ul>
+        <li>загрузить свой мем на страницу;</li>
+        <li>сделать вжух;</li>
+        <li>получить мем в ответ;</li>
+      </ul>
+      <input
+        type="file"
+        onChange="answerMeme()"
+        multiple
+        accept="img/jpg/jpeg/png"
+      />
+      <div>
+        <img class="displayed" src="1.jpg" width="40%" />
+        <img class="displayed" src="2.jpg" width="50%" />
+        <img class="displayed" src="3.jpg" width="50%" />
+        <img class="displayed" src="4.jpg" width="50%" />
+        <img class="displayed" src="5.jpg" width="50%" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body> -->
 </html>
