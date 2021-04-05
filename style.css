@@ -12,13 +12,16 @@ div {
 body {
   background: rgba(219, 200, 236, 0.4);
 
-  background-image: url("images/cat-back.png");
+  background-image: url("images/cats-back.png");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
+  min-height: 100vh;
+  height: 100vh;
 }
 
 .window {
-
   max-width: 550px;
   max-height: 350;
   padding: 100px;
@@ -40,8 +43,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  }
+}
 
 .text {
   display: flex;
@@ -76,7 +78,7 @@ label {
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
-  }
+}
 
 /* html,
 body {
