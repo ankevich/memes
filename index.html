@@ -10,52 +10,36 @@
     />
   </head>
 
-  <body>1212
+  <body>
     <div class="window">
-      <div class="text-block">
-        <div class="text">
-          <h1>Привет, друг!</h1>
-          <p>
-            Эта страница была создана для того, чтобы ты мог совершить обмен
-            мемами.
-          </p>
-          <p>
-            Как это работает? Загрузи на страницу свой лучший мем и получи один
-            из лучших мемов моей коллекции.
-          </p>
-        </div>
-        <input type="file" id="button" hidden />
-        <label for="button">Загрузить мем</label>
+      <div class="text">
+        <h1>Привет, друг!</h1>
+        <p>
+          Эта страница была создана для того, чтобы ты мог совершить обмен
+          мемами.
+        </p>
+        <p>
+          Как это работает? Загрузи на страницу свой лучший мем и получи один из
+          лучших мемов моей коллекции.
+        </p>
       </div>
-    </div>
-  </body>
-
-  <!-- <body>
-      <h1>Мемобмен</h1>
-      <h2>Привет, друг!</h2>
-      <p>
-        Эта страница была создана для того, чтобы ты мог совершить обмен мемами.
-      </p>
-      <p>Несколько простых шагов и ты получишь свой мем:</p>
-      <ul>
-        <li>загрузить свой мем на страницу;</li>
-        <li>сделать вжух;</li>
-        <li>получить мем в ответ;</li>
-      </ul>
       <input
         type="file"
-        onChange="answerMeme()"
+        id="button"
+        hidden
         multiple
         accept="img/jpg/jpeg/png"
       />
-      <div>
-        <img class="displayed" src="1.jpg" width="40%" />
-        <img class="displayed" src="2.jpg" width="50%" />
-        <img class="displayed" src="3.jpg" width="50%" />
-        <img class="displayed" src="4.jpg" width="50%" />
-        <img class="displayed" src="5.jpg" width="50%" />
+      <label for="button">Загрузить&nbsp;мем</label>
+    </div>
+    <div class="answer">
+      <div class="frame">
+        <img hidden src="1.jpg" width="40%" />
+        <img hidden src="2.jpg" width="50%" />
+        <img hidden src="3.jpg" width="50%" />
+        <img src="4.jpg" width="50%" />
+        <img hidden src="5.jpg" width="50%" />
       </div>
     </div>
-    <script src="script.js"></script>
-  </body> -->
+  </body>
 </html>

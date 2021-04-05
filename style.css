@@ -24,7 +24,7 @@ body {
 .window {
   max-width: 550px;
   max-height: 350;
-  padding: 100px;
+  padding: 80px;
 
   background: #35203b;
   box-shadow: 0px 4px 60px rgba(91, 58, 100, 0.4);
@@ -36,13 +36,6 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-.text-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .text {
@@ -80,45 +73,18 @@ label {
   font-size: 15px;
 }
 
-/* html,
-body {
-  margin: 0;
-  padding: 0;
+.answer {
+  min-height: 100%;
+  min-width: 100%;
+  backdrop-filter: blur(29.0821px);
+  -webkit-backdrop-filter: blur(29.0821px);
 }
 
-h1 {
-  font-family: "Inter", sans-serif;
-  background-position: center;
-  background-color: rgb(74, 214, 179);
-  text-align: center;
-  color: rgb(25, 10, 68);
-}
-h2,
-p,
-ul,
-li {
-  font-family: "Inter", sans-serif;
-  text-align: center;
-  padding: 0;
-}
-div {
-  padding-top: 20px;
-  text-align: center;
-}
-li {
-  text-align: left;
-}
-ul {
-  width: 250px;
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-br {
-  padding-top: none;
-} */
-img {
-  display: none;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
+.frame > * {
+  border-radius: 35.0429px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
